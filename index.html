@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- owl carousel css file -->
+    <link rel="stylesheet" href="./public/assets/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="./public/assets/owl-carousel/owl.theme.default.min.css">
+
+      <!-- font Awesome-5 cden link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       <!-- jquery js file -->
+    <script src="./public/assets/jquery/jquery-3.6.0.min.js"></script>
+
+    
+    <!-- bootstrap-5 -->
+    <link rel="stylesheet" href="./public/assets/bootstrap-5/bootstrap.min.css">
+    
+
+    <!-- custom css -->
+     <link rel="stylesheet" href="./public/assets/css/style.css">
+
+</head>
+<body>
+  <!-- header section start -->
+    <div class="top-header mb-3">
+      <div class="container d-flex justify-content-between align-items-center mt-0">
+            <div class="social-media-top d-flex">
+                      <div class="social-icon-1">
+                        <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                      </div>
+
+                      <div class="social-icon-2">
+                        <a href="#"><i class="fab fa-twitter text-white"></i></a>
+                      </div>
+
+                      <div class="social-icon-4">
+                        <a href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                      </div>
+
+                      <div class="social-icon-3">
+                        <a href="#"><i class="fab fa-google-plus-g text-white"></i></a>
+                      </div>
+                      
+            </div>
+
+            <div class="register_login">
+               <div class="d-flex">
+                        <a href="#"><i class="fas fa-user"></i> Register</a>
+                        <a href="#"><i class="fas fa-sign-in-alt ms-3"></i> Login</a>
+                      </div>
+            </div>
+      </div> 
+    </div>
+    <!-- header section end -->
+
+    <!-- start navbar section -->
+    <div class="nav-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+        <div class="container">
+                      <a class="navbar-brand p-0 m-0" href="#"><img src="/public/assets/img/logo/logo1.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars navbar-toggler-icon"> </i></button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+    
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Widges</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                          </li>
+
+                          
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                          </li>
+
+                          <li class="nav-item ms-lg-5">
+                            <a class="propery-list-btn" href="#">Post Propery Ad</a>
+                          </li>
+                     
+                        </ul>
+                  </nav>
+                </div>
+                <!-- start navbar section -->
+        </div>
+ 
+    </div>
+
+    <main class="main">
+      <!-- banner section start -->
+    <div class="banner-section" style="background-image:linear-gradient(to left, rgba(74, 61, 184, 0.8) 40%, rgba(156, 49, 223, 0.86) 100%), url('./public/assets/img/banner/banner1.jpg');">
+      <div class="container">
+        <div class="banner-text text-center">
+            <h1>Find Your Best Property</h1>
+        </div>
+        <div class="search-filter">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Location Landmark">
+                <button class="location_search_icon" type="button"><i class="fas fa-map-marker-alt"></i></button>
+                <select class="form-select">
+                    <option value="" class="text-secondry">Propery Type</option>
+                    <option value="apartments">Apartments</option>
+                    <option value="Modren Flats">Modren Flats</option>
+                    <option value="Stylish House">Stylish House</option>
+                </select>
+
+                <select class="form-select">
+                <option value="" class="text-secondry">Min Price</option>
+                <option value="50">$50</option>
+                <option value="60">$60</option>
+                <option value="70">$70</option>
+            </select>      
+
+             <select class="form-select">
+                <option value="" class="text-secondry">Max Price</option>
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="200">$300</option>
+            </select>
+                <button class="search-btn" type="button" id="button-addon2">Search Here</button>
+              </div> 
+        </div>
+      </div>
+    </div>
+     <!-- banner section end -->
+
+    <div class="category_overview_cart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-inner">
+              <div class="container">
+                   <div class="row pt-3">
+                    <div class="col-md-3 pb-3">
+                      <div class="d-flex align-items-center">
+                      <div class="category_overiew_icon1 me-2">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <div class="inner-text">
+                           <h5>1,200</h5>
+                           <span>Commercial Lands</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pb-3">
+                      <div class="d-flex align-items-center">
+                        <div class="category_overiew_icon2 me-2">
+                          <i class="fas fa-home"></i>
+                      </div>
+                      <div class="inner-text">
+                             <h5>894</h5>
+                             <span>Showrooms & Shops</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3 pb-3">
+                      <div class="d-flex align-items-center">
+                        <div class="category_overiew_icon3 me-2">
+                          <i class="fab fa-joomla"></i>
+                      </div>
+                      <div class="inner-text">
+                             <h5>1,089</h5>
+                             <span>office rooms</span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-3 pb-3">
+                      <div class="d-flex align-items-center">
+                        <div class="category_overiew_icon4 me-2">
+                          <i class="fas fa-building"></i>
+                      </div>
+                      <div class="inner-text">
+                             <h5>789</h5>
+                             <span>Residential</span>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+              </div>
+            </div>
+            
+          </div>
+         
+        </div>
+      </div>
+         
+    </div>
+
+  <!-- category section start -->
+    <div class="category-section mt-5">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-8">
+            <h2>Categories</h2>
+            <p>A paragraph is a distinct section of writing, typically consisting of several sentences, that focuses on a single idea or topic</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-content" >
+        <div class="container">
+          <div class="owl-carousel">
+        <div>
+          <img src="/public/assets/img/category/1.png" alt="">
+          <div class="inner-div">
+            <div class="overlay-effect"></div>
+              <div class="inner-text">
+               <h3>Luxury Houses</h3>
+               <p class="lable-1">08</p>
+              </div>
+        </div>
+        </div>
+        <div>
+          <img src="/public/assets/img/category/3.png" alt=""> 
+          <div class="inner-div">
+            <div class="overlay-effect"></div>
+          <div class="inner-text">
+            <h3>2BHK Houses</h3>
+            <p class="lable-2">08</p>
+           </div>
+          
+        </div>
+        
+
+        </div>
+        <div> <img src="/public/assets/img/category/4.png" alt=""> 
+          <div class="inner-div">
+          <div class="overlay-effect"></div>
+          <div class="inner-text">
+            <h3>Duplex Houses</h3>
+            <p class="lable-3">08</p>
+           </div>
+        
+        
+      </div>
+        </div>
+        <div> <img src="/public/assets/img/category/5.png" alt=""> 
+          <div class="inner-div">
+          <div class="overlay-effect"></div>
+          <div class="inner-text">
+            <h3>Stylish House</h3>
+            <p class="lable-4">08</p>
+           </div>
+        
+      </div>
+        </div>
+        <div> <img src="/public/assets/img/category/3.png" alt="">
+          <div class="inner-div">
+          <div class="overlay-effect"></div>
+          <div class="inner-text">
+            <h3>Apartments Houses</h3>
+            <p class="lable-5">08</p>
+           </div>        
+      </div>
+        </div>
+        <div> <img src="/public/assets/img/category/2.png" alt=""> 
+          <div class="inner-div">
+          <div class="overlay-effect"></div>
+          <div class="inner-text">
+            <h3>Nature Houses</h3>
+            <p class="lable-6">08</p>
+           </div>        
+      </div>
+        </div>
+        <div> <img src="/public/assets/img/category/4.png" alt=""> 
+          <div class="inner-div">
+          <div class="overlay-effect"></div>
+          <div class="inner-text">
+            <h3>Office Houses</h3>
+            <p class="lable-7">08</p>
+           </div>
+        
+      </div>
+        </div>
+      </div>
+        </div>
+       
+      </div>
+  </div>
+   <!-- category section end -->
+
+
+   <!-- Start latest proverty section -->
+   <div class="letest-propery mt-5">
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col-8">
+          <h2>Latest Properties</h2>
+          <p>A paragraph is a distinct section of writing, typically consisting of several sentences, that focuses on a single idea or topic</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-content" >
+      <div class="container">
+        <div class="owl-carousel">
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/1.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+        
+      </div>
+      <div>
+
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/1.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/2.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+        
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/3.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/4.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/5.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/3.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/2.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/4.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div> 
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/5.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/3.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/1.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+
+             <div class="img-top-right-text">
+              <div class="d-flex align-items-center">
+              <div class="icon-right-1 bg-dark me-1">
+                <span><i class="fas fa-home"></i></span>
+              </div>
+              <div class="icon-right-1 bg-primary">
+                <span><i class="fas fa-heart"></i></span>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="card-booter-img">
+              <div class="d-flex align-items-center">
+              <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+              <span class="ms-2 text-muted">John Hunter</span>
+            </div>
+            </div>
+              <div class="time mt-3">
+                <p class="text-muted"> 6 min ago.</p>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+</div>
+
+      <!-- End latest proverty section -->
+
+
+
+    <!-- Start Feuters section -->
+   <div class="features-property mt-5">
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col-8">
+          <h2>Featured Properties</h2>
+          <p>A paragraph is a distinct section of writing, typically consisting of several sentences, that focuses on a single idea or topic</p>
+        </div>
+      </div>
+    </div>
+    <div class="inner-content" >
+      <div class="container">
+        <div class="owl-carousel">
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/1.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="far fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="share">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+        
+      </div>
+      <div>
+
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/2.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="fas fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="share">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+        
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/3.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="far fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="share">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/4.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="fas fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="time">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/3.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="far fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="share">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div> 
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/2.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="fas fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="share">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-top-img">
+          <img src="/public/assets/img/category/4.png" class="img-fluid" alt="">
+          <div class="img-top-content">
+            <div class="img-top-left-text">
+              <div style="background-color: #9c31df; padding:2px 15px; margin-top:5px">
+              <span>Sale</span>
+            </div>
+            </div>
+            
+             <div class="img-top-right-text">
+                <div class="icon-right-1 bg-dark">
+                  <span>Featured</span>
+                </div>
+              </div>
+          </div>
+          <div class="icon-right-2">
+            <span><i class="far fa-heart"></i></span>
+          </div> 
+        </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h2 class="card-title p-0"><a href="#" class="text-decoration-none text-dark">Office Rooms</a></h2>
+              <p class="location"><i class="fas fa-map-marker-alt text-danger me-1"></i>Prestion street Wichita, USA</p>
+              <p class="price"><strong>$12,784</strong> Per Month</p>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-arrows-alt text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-bed text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+
+              <div class="d-flex  justify-content-between mt-2">
+                <div>
+                  <i class="fa fa-bath text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              <div>
+                <i class="fa fa-car text-muted me-1"></i>
+                <span>300 Sqft</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-alt text-muted"></i>
+              <span class="ms-2 text-muted">June 29 2019</span>
+            </div>
+              <div class="share">
+                <i class="fas fa-share-alt text-muted"></i>
+            </div>
+           
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+</div>
+      <!-- End fetures  section -->
+
+
+      <!-- start total client review -->
+       <div class="total_reviews mt-5" style="background-image:linear-gradient(to left, rgba(74, 61, 184, 0.8) 100%, rgba(156, 49, 223, 0.86) 100%), url('./public/assets/img/banner/banner2.jpg');">
+           <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="inner-text">
+                  <p>Total Agents</p>
+                  <span id="count-1"></span>
+                </div>
+               
+              </div>
+
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+
+                <div class="inner-text">
+                  <p>Total Sales</p>
+                  <span id="count-2"></span>
+                </div>
+
+              </div>
+
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="fas fa-file"></i>
+                </div>
+                <div class="inner-text">
+                  <p>Total Projects</p>
+                  <span id="count-3"></span>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="fas fa-smile"></i>
+                </div>
+                <div class="inner-text">
+                  <p>Happy Customers</p>
+                  <span id="count-4"></span>
+                </div>
+              </div>
+
+            </div>
+           </div>
+       </div>
+
+            <!-- end total client review -->
+
+            <!-- start property collection section -->
+
+            <div class="property-collection mt-5">
+              <div class="container">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-12">
+                    <h2>Best Propery Collections</h2>
+                    </div>
+                    <div class="col-md-12 mt-5">
+                    <ul class="nav nav-tabs d-flex align-items-center justify-content-center" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="house-tab" data-bs-toggle="tab" data-bs-target="#house" type="button" role="tab" aria-controls="house" aria-selected="false">2BHK Homes</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="villas-tab" data-bs-toggle="tab" data-bs-target="#villas" type="button" role="tab" aria-controls="villas" aria-selected="false">Villas</button>
+                      </li>
+                    </ul>
+                  </div>
+
+                      <div class="tab-content mt-5" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-4">
+                                 <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-home"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Luxury Room</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-building"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Villa</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-home"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Appartments</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+                              
+                           
+                              <div class="mt-5 showMore">
+                                <button id="showMoreButton">Show More</button>
+                              </div>
+
+                            <div class="row mt-4" id="ShowMoreDiv">
+                                <div class="col-md-4">
+                                  <div class="card">
+                                    <span class="ribbon-2">
+                                       <span><i class="fas fa-home"></i></span>
+                                       </span>
+                                    <div class="card-top-img">
+                                      <img src="./public/assets/img/category/1.png" alt="">
+                                      <div class="item-card8-overlaytext">
+                                         <h6 class="">Appartments</h6> </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-inner-content text-start">
+                                       <p class="text-muted">16 June 2025</p>
+                                       <h4 class="card-title">Food & Bar Apartments</h4>
+                                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                    </div>
+                                  </div>
+                                   </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                  <div class="card">
+                                    <span class="ribbon-2">
+                                       <span><i class="fas fa-home"></i></span>
+                                       </span>
+                                    <div class="card-top-img">
+                                      <img src="./public/assets/img/category/1.png" alt="">
+                                      <div class="item-card8-overlaytext">
+                                         <h6 class="">Appartments</h6> </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-inner-content text-start">
+                                       <p class="text-muted">16 June 2025</p>
+                                       <h4 class="card-title">Food & Bar Apartments</h4>
+                                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                    </div>
+                                  </div>
+                                   </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                  <div class="card">
+                                    <span class="ribbon-2">
+                                       <span><i class="fas fa-home"></i></span>
+                                       </span>
+                                    <div class="card-top-img">
+                                      <img src="./public/assets/img/category/1.png" alt="">
+                                      <div class="item-card8-overlaytext">
+                                         <h6 class="">Appartments</h6> </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="card-inner-content text-start">
+                                       <p class="text-muted">16 June 2025</p>
+                                       <h4 class="card-title">Food & Bar Apartments</h4>
+                                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                    </div>
+                                  </div>
+                                   </div>
+                                </div> 
+                            </div>
+
+                            <div class="mt-5 showMore">
+                              <button id="CloseButton" style="display: none;">Close</button>
+                            </div>
+                          </div>
+
+                          </div>
+                          
+                
+                        </div>
+                        <div class="tab-pane fade" id="house" role="tabpanel" aria-labelledby="house-tab">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-4">
+                                 <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-home"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Luxury Room</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-building"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Villa</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-home"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Appartments</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="villas" role="tabpanel" aria-labelledby="villas-tab">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-4">
+                                 <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-home"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Luxury Room</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-building"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Villa</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <div class="card">
+                                  <span class="ribbon-2">
+                                     <span><i class="fas fa-home"></i></span>
+                                     </span>
+                                  <div class="card-top-img">
+                                    <img src="./public/assets/img/category/1.png" alt="">
+                                    <div class="item-card8-overlaytext">
+                                       <h6 class="">Appartments</h6> </div>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="card-inner-content text-start">
+                                     <p class="text-muted">16 June 2025</p>
+                                     <h4 class="card-title">Food & Bar Apartments</h4>
+                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit corporis ipsa</p>
+                                  </div>
+                                </div>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                 
+
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- end property collection section -->
+
+
+            <!-- start listing_place -->
+
+            <div class="listing_place mt-5">
+              <div class="container">
+                <div class="row text-center justify-content-center">
+                  <div class="col-8">
+                    <h2>Top Listing Places</h2>
+                    <p>A paragraph is a distinct section of writing, typically consisting of several sentences, that focuses on a single idea or topic</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="inner-content" >
+                <div class="container">
+                  <div class="owl-carousel">
+                <div>
+                  <img src="/public/assets/img/category/1.png" alt="">
+                  <div class="inner-div">
+                    <div class="overlay-effect"></div>
+                      <div class="inner-text">
+                        <h4>44,327</h4>
+                       <h4>GERMANY</h4>
+                      </div>
+                      <p class="lable-1" 
+                      style="position: absolute; bottom:0; left:3%;
+                       font-size:12px; color:white; padding:5px 8px; 
+                       background-color:#9c31df; border-radius:5%">
+                        <i class="far fa-heart"></i> 786</p>
+                </div>
+                </div>
+                <div>
+                  <img src="/public/assets/img/category/3.png" alt=""> 
+                  <div class="inner-div">
+                    <div class="overlay-effect"></div>
+                  <div class="inner-text">
+                    <h4>52,145</h4>
+                    <h4>LONDON</h4>
+                   </div>
+                   <p class="lable-2" 
+                   style="position: absolute; bottom:0; left:3%;
+                    font-size:12px; color:white; padding:5px 8px; 
+                    background-color:rgba(72, 153, 6, 0.86); border-radius:5%">
+                     <i class="far fa-heart"></i> 89</p>
+                  
+                </div>
+                
+        
+                </div>
+                <div> <img src="/public/assets/img/category/4.png" alt=""> 
+                  <div class="inner-div">
+                  <div class="overlay-effect"></div>
+                  <div class="inner-text">
+                    <h4>63,263</h4>
+                    <h4>AUSTERLIA</h4>
+                  
+                   </div>
+                   <p class="lable-3" 
+                   style="position: absolute; bottom:0; left:3%;
+                    font-size:12px; color:white; padding:5px 8px; 
+                    background-color:rgba(4, 85, 117, 0.86); border-radius:5%">
+                     <i class="far fa-heart"></i> 567</p>
+                
+                
+              </div>
+                </div>
+                <div> <img src="/public/assets/img/category/5.png" alt=""> 
+                  <div class="inner-div">
+                  <div class="overlay-effect"></div>
+                  <div class="inner-text">
+                    <h4>36,485</h4>
+                    <h4>CHICAGO</h4>
+
+                   </div>
+                   <p class="lable-4" 
+                   style="position: absolute; bottom:0; left:3%;
+                    font-size:12px; color:white; padding:5px 8px; 
+                    background-color:rgba(252, 221, 47, 0.86); border-radius:5%">
+                     <i class="far fa-heart"></i> 123</p>
+                
+              </div>
+                </div>
+                <div> <img src="/public/assets/img/category/3.png" alt="">
+                  <div class="inner-div">
+                  <div class="overlay-effect"></div>
+                  <div class="inner-text">
+                    <h4>64,825</h4>
+                    <h4>WASHINGTON</h4>
+                   </div>    
+                   <p class="lable-5" 
+                      style="position: absolute; bottom:0; left:3%;
+                       font-size:12px; color:white; padding:5px 8px; 
+                       background-color:rgba(247, 37, 37, 0.86); border-radius:5%">
+                        <i class="far fa-heart"></i> 894</p>    
+              </div>
+                </div>
+
+              </div>
+                </div>
+               
+              </div>
+          </div>
+
+          <!-- end listing_place -->
+
+
+      <!-- Start Recent Posts -->
+
+      <div class="letest-propery mt-5">
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div class="col-8">
+              <h2>Recent Posts</h2>
+              <p>A paragraph is a distinct section of writing, typically consisting of several sentences, that focuses on a single idea or topic</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="inner-content" >
+          <div class="container">
+            <div class="owl-carousel">
+          <div>
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/1.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #9c31df; padding:2px 15px;">
+                  <span>3BHK Flat</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">3BHK Flat</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+    
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/2.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #08107e; padding:2px 15px;">
+                  <span>3BHK Flat</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">3BHK Flat</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+            
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/3.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #cfb20f; padding:2px 15px;">
+                  <span>3BHK Flat</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">3BHK Flat</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/4.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #a30e60; padding:2px 15px;">
+                  <span>Duplex House</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">Duplex House</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/5.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/3.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #059b87; padding:2px 15px;">
+                  <span>2BHK Flat</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">2BHK Flat</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div> 
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/2.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #9c31df; padding:2px 15px;">
+                  <span>3BHK Flat</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">3BHK Flat</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-top-img">
+              <img src="/public/assets/img/category/4.png" class="img-fluid" alt="">
+              <div class="img-top-content">
+                <div class="img-top-left-text">
+                  <div style="background-color: #450a92; padding:2px 15px;">
+                  <span>3BHK Flat</span>
+                </div>
+                </div>
+              </div> 
+            </div>
+              <div class="card-body">
+                <div class="card-text">
+                   <div class="d-flex justify-content-between" style="font-size: 14px;">
+                    <div>
+                     <span class="text-muted"><i class="fas fa-calendar-alt text-muted"></i> March,19-2025</span>
+                    </div>
+                    <div>
+                     <span class="text-muted"><i class="far fa-comment text-muted"></i> 8 Comments</span>
+                    </div>
+                   </div>
+                   <h2 class="card-title mt-4">3BHK Flat</h2>
+                   <p class="p-0 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eligendi ipsum</p>
+    
+        
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div class="card-booter-img">
+                  <div class="d-flex">
+                  <img src="./public/assets/img/category/1.png" class="img-fluid" alt="">
+                  <div class="d-flex flex-column">
+                    <span class="ms-2 text-muted p-0 m-0">Royal Manali</span>
+                    <span class="ms-2 text-muted" style="font-size: 13px;">6 days ago</span>
+                  </div>
+                 
+                </div>
+                </div>
+                  <div class="time mt-3">
+                    <p class=""><i class="far fa-heart"></i> <i class="far fa-thumbs-up ms-2"></i></p>
+                   
+                </div>
+               
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- End Recent posts -->
+
+
+      <!-- start footer section -->
+       <section class="footer mt-5">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur 
+                  tempora beatae esse asperiores consectetur sapiente voluptatem qui recusandae voluptatum nihil non facere iusto,
+                   magni reprehenderit dolores animi repellat quod odit.</p>
+              </div>
+
+              <div class="col-md-3">
+                <h3>Our Quick Links</h3>
+                 <ul class="list-unstyled">
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Luxury Rooms</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Terms</a></li>
+                 </ul>
+              </div>
+
+
+              <div class="col-md-3">
+                <h3>Contact</h3>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-map-marker-alt"></i><a href="">New York, NY 10012, US</a></li>
+                  <li><i class="fas fa-envelope"></i><a href="">info@example.com</a></li>
+                  <li><i class="fas fa-phone-alt"></i><a href="">+01 234 567 88</a></li>
+                  <li><i class="fas fa-print"></i><a href="">+01 234 567 89</a></li>
+                 </ul>
+
+                 <div class="d-flex">
+                      <div class="social-icon-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </div>
+
+                      <div class="social-icon-2">
+                        <i class="fab fa-twitter"></i>
+                      </div>
+
+                      <div class="social-icon-3">
+                        <i class="fab fa-google-plus-g"></i>
+                      </div>
+
+                      <div class="social-icon-4">
+                        <i class="fab fa-linkedin-in"></i>
+                      </div>
+
+                     
+                 </div>
+              </div>
+
+
+              <div class="col-md-3">  
+                <h3>Subscribe</h3>
+                <form action="" method="post">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="subscribe" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="subscribe-btn" type="button" id="button-addon2">Subscribe</button>
+                  
+                </div>
+                 
+                <h3>Payments</h3>
+                <div class="payment_icon">
+                  <i class="fab fa-cc-amex text-muted" aria-hidden="true"></i>
+                  <i class="fab fa-cc-visa text-muted"></i>
+                  <i class="far fa-credit-card text-muted"></i>
+                  <i class="fab fa-cc-mastercard text-muted"></i>
+                  <i class="fab fa-cc-paypal text-muted"></i>
+                </div>
+
+                
+              </form>
+              </div>
+            </div>
+         
+          </div>
+          <hr>
+          <div class="bottom-footer text-center pt-2">
+             <p class="text-white">Copyright © 2025 <span style="color: #920a49;">Realestate</span> by <span style="color: #920a49;">Rkdesigner</span> All Rights reserved.</p>
+          </div>
+
+        </footer>
+
+      </section>
+
+
+
+
+  </main>
+
+
+    <!-- bootstrap-5 js file -->
+  <script src="./public/assets/bootstrap-5/bootstrap.js"></script>
+
+<script src="./public/assets/owl-carousel/owl.carousel.min.js"></script>
+<script src="./public/assets/js/main.js"></script>
+
+
+<script>
+
+  $('#ShowMoreDiv').hide();
+
+  $('#showMoreButton').click(function(){
+    $('#ShowMoreDiv').show();
+    $('#CloseButton').show();
+    $('#showMoreButton').hide();
+  });
+  
+  $('#CloseButton').click(function(){
+    $('#ShowMoreDiv').hide();
+    $('#showMoreButton').show();
+    $(this).hide();
+  });
+  
+
+  
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:true,
+      margin:15,
+      nav:true,
+      autoplay : true,
+      autoplayHoverPause: true,
+      slideTransition: 'linear',
+      responsiveClass:true,
+
+      responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+      }
+    });
+    
+  });
+
+
+
+</script>
+
+
+</body>
+</html>
