@@ -64,3 +64,8 @@ a.addEventListener("click", function() {
     counter("count-4", 0, 7110, 3000);
 
 });
+
+
+
+
+
