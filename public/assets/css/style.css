@@ -403,7 +403,7 @@ input:focus,
 }
 
 
- .card .card-top-img {
+ .card-top-img {
    width: 100%;
    height: 200px;
    border-radius: 0;
@@ -414,7 +414,7 @@ input:focus,
 }
 
 
- .card .card-top-img img{
+ .card-top-img img{
    height: 100%;
    width: 100%;
    transition: 0.2s ease-in-out;
@@ -428,17 +428,14 @@ input:focus,
 }
 
 
-
-
-.card .card-top-img img:hover{
+.card-top-img img:hover{
    scale: 1;
    border-radius: 0;
  
 }
 
 
-
- .card .img-top-content {
+ .img-top-content {
    width: 100%;  
    position: absolute;
    top: 20px;
@@ -451,12 +448,64 @@ input:focus,
 
 
 
-   .card .img-top-content .img-top-right-text {
+  .img-top-content .img-top-right-text {
    padding: 5px 6px;
   }
 
-  .card .img-top-content .img-top-right-text .icon-right-1 {
+   .img-top-content .img-top-right-text .icon-right-1 {
    padding: 5px 10px;
+  }
+
+ 
+
+.card-body .location,
+ .card-body .card-title{
+   margin: 0;
+   padding: 0;
+}
+
+ .card-body .card-title {
+   font-size: 20px;
+}
+
+.card-footer {
+   background-color:var(--white-color);
+}
+
+.card-footer .card-booter-img img{
+   height: 40px;
+   width: 40px;
+   border-radius: 100%;
+
+}
+.features-property .img-bottom-text,
+.img-bottom-text{
+   position: relative;
+   bottom: 40px;
+   left: 73%;
+   padding: 2px 2px;
+   display: flex;
+   flex-direction: row;
+   width:80px;
+   justify-content: center;
+   gap: 2;
+   height: 15%;
+   background-color: rgba(28, 28, 29, 0.7);
+   border-radius: 3px;
+  
+   
+  }
+
+  .img-bottom-text span{
+   color: rgb(240, 184, 30);
+   font-size: 25px;
+   
+  }
+
+
+
+  .features-property .img-bottom-text {
+   left: 1.2%;
   }
 
  
@@ -464,26 +513,6 @@ input:focus,
 
 
 
-.inner-content .card .location,
- .inner-content .card .card-title{
-   margin: 0;
-   padding: 0;
-}
-
-.inner-content .card .card-title {
-   font-size: 20px;
-}
-
-.inner-content .card .card-footer {
-   background-color:var(--white-color);
-}
-
-.inner-content .card .card-footer .card-booter-img img{
-   height: 40px;
-   width: 40px;
-   border-radius: 100%;
-
-}
 
 .icon-right-2{
    height: 30px;
@@ -866,3 +895,132 @@ border-radius:50px;
  }
 
 
+ .listing-section .img-bottom-text {
+   left: 1.2%;
+  }
+
+
+
+  /* ********************Property Detail************************ */
+
+  .property-detail h4{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  
+  .property-detail h3{
+   font-size: 27px;
+   font-weight: 500;
+  }
+  .property-detail .card-header{
+   background-color: #fff;
+  }   
+  .property-detail .posted-detail {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
+
+  .property-detail .posted-detail img{
+         height: 100px;
+         width: 100px;
+         border-radius: 50%;
+         margin-bottom: 12px;
+  }
+
+
+  .property-detail .posted-contact-detail ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.property-detail .posted-contact-detail ul li{
+ padding-top: 10px;
+
+}
+
+.property-detail .posted-contact-detail ul li a{
+   text-decoration: none;
+   color: #637185;
+   margin: 8px;
+}
+
+.property-detail .posted-contact-detail span{
+   padding: 8px;
+   border-radius: 50%;
+   color: rgb(17, 17, 17);
+   background-color: #f2f3f8;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+
+.property-detail .card-detail-img{
+   width: 100%;
+   height: 400px;
+
+  
+}
+
+.property-detail .card-detail-img img{
+   margin-top: 10px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.property-detail .card-multi-img {
+   width: 100%;
+   height: 150px;
+   gap: 20px;
+   overflow: hidden;
+  
+}
+
+.property-detail .card-multi-img img{
+   width: 100%;
+   height: 200px;
+   scale: 1;
+   transition: 0.5s ease-in-out;
+  
+}
+
+.property-detail .card-multi-img img:hover{
+   scale: 1.1;
+  
+}
+
+.property-detail .card{
+   border: none;
+}
+
+
+.keywords a{
+   text-decoration: none;
+   color: #5b5b5e;
+   padding: 3px 10px;
+   border: 1px solid #5b5b5e;
+   transition: 0.2s ease-in-out;
+}
+
+.keywords a:hover{
+   color: var(--secondry-color);
+   border: 1px solid var(--secondry-color);
+
+}
+
+
+
+ /* media query home section */
+ @media (max-width:768px) {
+   .property-detail .card-multi-img{
+      flex-direction: column;
+   }
+
+  
+
+
+}
