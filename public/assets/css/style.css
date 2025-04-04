@@ -482,11 +482,11 @@ input:focus,
 .img-bottom-text{
    position: relative;
    bottom: 40px;
-   left: 73%;
-   padding: 2px 2px;
+   left: 66%;
+   padding: 2px 5px;
    display: flex;
    flex-direction: row;
-   width:80px;
+   width:100px;
    justify-content: center;
    gap: 2;
    height: 15%;
@@ -498,7 +498,7 @@ input:focus,
 
   .img-bottom-text span{
    color: rgb(240, 184, 30);
-   font-size: 25px;
+   font-size: 12px;
    
   }
 
