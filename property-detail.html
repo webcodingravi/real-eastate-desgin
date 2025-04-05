@@ -128,7 +128,6 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        
                         <div class="card-body">
                             <h3 class="fw-bold">Affodable 2 BHK Flats Available Gated Community</h3>
                             <div class="d-flex gap-4 text-muted">
@@ -141,6 +140,18 @@
                                 <img src="./public/assets/img/category/3.png" alt="" id="display">
                             </div>
 
+                      
+                          
+                                
+                          <div class="card-multi-img d-flex mt-3">
+                              <img src="./public/assets/img/category/2.png" alt="" onclick="gallery(this)">
+                              <img src="./public/assets/img/category/3.png" alt="" onclick="gallery(this)">
+                              <img src="./public/assets/img/category/1.png" alt="" onclick="gallery(this)">
+                        </div>
+                                
+                              
+                      
+
                            
                         </div>
                     </div>
@@ -148,6 +159,7 @@
                 </div>
 
                 <div class="col-md-4">
+                  <div class="info">
                     <div class="card">
                         <div class="card-header">
                             <h4>Posted By</h4>
@@ -173,6 +185,24 @@
                                  </div>
                         </div>
                     </div>
+                  </div>
+
+
+                    <div class="keywords mt-3">
+                    <div class="card">
+                      <div class="card-header">
+                          <h4>Keywords</h4>
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex gap-2">
+                         <a href="#">2BHK</a>
+                         <a href="#">2BHK</a>
+                         <a href="#">Home</a>
+                      </div>
+                      </div>
+                
+                    </div>
+                  </div>
 
                 
                 </div>
@@ -180,36 +210,6 @@
             </div>
 
 
-            <div class="row">
-                <div class="col-md-8">
-                 <div class="card">
-                    <div class="card-body">
-                        <div class="card-multi-img d-flex">
-                            <img src="./public/assets/img/category/2.png" alt="" onclick="gallery(this)">
-                            <img src="./public/assets/img/category/3.png" alt="" onclick="gallery(this)">
-                            <img src="./public/assets/img/category/1.png" alt="" onclick="gallery(this)">
-                       </div>
-                    </div>
-                 </div>
-                </div>
-
-                <div class="col-md-4 mt-4">
-                  <div class="card">
-                    <div class="keywords">
-                    <div class="card-header">
-                        <h4>Keywords</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex gap-2">
-                       <a href="#">2BHK</a>
-                       <a href="#">2BHK</a>
-                       <a href="#">Home</a>
-                    </div>
-                    </div>
-                </div>
-                  </div>
-                </div>
-            </div>
 
 
             <div class="row mt-5">
@@ -832,8 +832,8 @@
                     </div>
                     <div class="card-body">
                         <div class="d-flex gap-3">
-                            <div style="height:60px; width:80px; border-radius:50%;">
-                                <img src="./public/assets/img/category/2.png" style="height: 100%; width:100%; border-radius:50%" alt="">
+                            <div class="rating-user-img">
+                                <img src="./public/assets/img/category/2.png" alt="">
                             </div>
     
                             <div>
@@ -886,8 +886,8 @@
     
     
                               <div class="d-flex gap-3 mt-4">
-                                <div style="height:60px; width:80px; border-radius:50%;">
-                                    <img src="./public/assets/img/category/2.png" style="height: 100%; width:100%; border-radius:50%" alt="">
+                                <div class="rating-user-img">
+                                    <img src="./public/assets/img/category/2.png" alt="">
                                 </div>
         
                                 <div>
@@ -1085,10 +1085,10 @@
                 items:1,
                 nav:true
             },
-            600:{
-                items:3,
-                nav:false
-            },
+            400:{
+              items:2,
+              nav:false
+          },
             1000:{
                 items:4,
                 nav:true,
