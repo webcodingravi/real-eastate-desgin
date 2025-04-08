@@ -44,6 +44,15 @@
    cursor: pointer;
 }
 
+a{
+   color: #070510;
+   text-decoration: none;
+}
+
+.card{
+   border: none;
+}
+
 .form-check-input:focus,
 .form-select:focus,
 input:focus,
@@ -88,6 +97,8 @@ input:focus,
  }
 
 
+ 
+ .nav-header .nav-item .nav-link.active,
  .nav-header .nav-item .nav-link:hover {
    color: var(--secondry-color);
     
@@ -240,6 +251,7 @@ input:focus,
    position: relative;
    border-radius: 10px;
    display: block;
+   object-fit: cover;
       
 }
 
@@ -254,6 +266,7 @@ input:focus,
    background:rgba(0,0,0,0.3);
    z-index: 1;
    display: block;
+ 
 
   
 }
@@ -269,7 +282,7 @@ input:focus,
    transition: 0.5s ease-in-out;
    -webkit-transition: 0.5s ease-in-out;
    background-image:linear-gradient(to left, rgba(74, 61, 184, 0.8) 40%, rgba(156, 49, 223, 0.86) 100%);
-   margin-left: 450px;
+   margin-left: 700px;
    rotate: 65deg;
    scale: 1.5;
    z-index: -1;
@@ -478,12 +491,12 @@ input:focus,
    border-radius: 100%;
 
 }
-.features-property .img-bottom-text,
+
 .img-bottom-text{
    position: relative;
    bottom: 40px;
    left: 66%;
-   padding: 2px 5px;
+   padding: 2px 8px;
    display: flex;
    flex-direction: row;
    width:100px;
@@ -496,19 +509,74 @@ input:focus,
    
   }
 
-  .img-bottom-text span{
-   color: rgb(240, 184, 30);
-   font-size: 12px;
-   
-  }
-
-
-
-  .features-property .img-bottom-text {
-   left: 1.2%;
-  }
+.features-property .img-bottom-text
+{
+ left: 1%;
+}
 
  
+
+
+
+  .ratings-container {
+   display: flex;
+   align-items: center;
+   font-size: 1rem;
+   margin-bottom: 0.1rem;
+   line-height: 1;
+   white-space: nowrap;
+   padding-left:8px
+}
+
+.ratings {
+   position: relative;
+   color: #cccccc
+}
+
+.ratings,.ratings-val {
+   display: inline-block;
+   font-size: 0.7rem;
+   letter-spacing: 0.4em;
+   line-height: 1;
+}
+
+.ratings:before,.ratings-val:before {
+   content: "\f005\f005\f005\f005\f005"; /* Star icon */
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   
+   
+    
+}
+
+.ratings-val {
+   position: absolute;
+   top: 0;
+   left: 0;
+   white-space: nowrap;
+   overflow: hidden;
+   color: #fcb941;
+  
+  
+}
+
+.ratings-primary .ratings-val {
+   color: #c96
+}
+
+.ratings-text {
+   color: #cccccc;
+   letter-spacing: -.01em;
+   margin-left: .8rem
+}
+
+.ratings-text a {
+   color: inherit
+}
+
+.ratings-text a:hover,.ratings-text a:focus {
+   color: #c96
+}
 
 
 
@@ -980,44 +1048,7 @@ border-radius:50px;
 }
 
 
-.property-detail .card-detail-img{
-   width: 100%;
-   height: 400px;
 
-  
-}
-
-.property-detail .card-detail-img img{
-   margin-top: 10px;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
-
-.property-detail .card-multi-img {
-   width: 100%;
-   height: 150px;
-   gap: 20px;
-   overflow: hidden;
-  
-}
-
-.property-detail .card-multi-img img{
-   width: 100%;
-   height: 200px;
-   scale: 1;
-   transition: 0.5s ease-in-out;
-  
-}
-
-.property-detail .card-multi-img img:hover{
-   scale: 1.1;
-  
-}
-
-.property-detail .card{
-   border: none;
-}
 
 
 .keywords a{
@@ -1047,6 +1078,88 @@ border-radius:50px;
     border-radius:50%;
 }
 
+.property-detail .card{
+   border: none;
+  
+}
+
+
+.image-slider-section {
+   position: relative;
+
+ }
+
+ /* Hide the images by default */
+ .image-slider-section .mySlides {
+   display: none;
+ 
+ }
+
+ .image-slider-section .mySlides img {
+   object-fit: cover;
+   height: 400px;
+ }
+
+ /* Add a pointer when hovering over the thumbnail images */
+ .image-slider-section .cursor {
+   cursor: pointer;
+ }
+
+ /* Next & previous buttons */
+ .image-slider-section .prev,
+ .next {
+   cursor: pointer;
+   position: absolute;
+   top: 35%;
+   width: auto;
+   padding: 16px;
+   margin-top: -50px;
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .image-slider-section .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .image-slider-section .prev:hover,
+ .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* Number text (1/3 etc) */
+ .image-slider-section .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+
+ /* Add a transparency effect for thumnbail images */
+ .image-slider-section .demo {
+   opacity: 0.6;
+ }
+
+ .image-slider-section .active,
+ .demo:hover {
+   opacity: 1;
+ }
+
+
+ .image-slider-section  img{
+   height: 160px;
+   object-fit: cover;
+ }
 
 
  /* media query home section */
@@ -1076,4 +1189,148 @@ border-radius:50px;
 .learn_more:hover{
    background: var(--primary-color);
    color: white;
+}
+
+
+/**************About css*******************/
+
+.about-section{
+   background: #eceaea;
+}
+
+.how-work .icon {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.how-work .icon img{
+   width: 45px;
+   height: 45px;
+   
+}
+
+
+.property-ad-cta{
+   object-fit: cover;
+
+
+}
+
+.property-ad-cta h1 {
+   font-weight: normal;
+}
+
+.property-cta-btn{
+   border: none;
+   background-color: var(--secondry-color);
+   color: #fff;
+   width: 200px;
+   padding: 8px 25px;
+   transition: 0.2s ease-in-out;
+}
+
+
+.property-cta-btn:hover{
+   background-color: var(--primary-color);   
+   transition: 0.2s ease-in-out;
+}
+
+.why-choose .card{
+   border: none;
+}
+
+.why-choose .icon {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+  
+}
+
+.why-choose .icon.green {
+   background-color: #27c781;
+}
+
+.why-choose .icon.blue {
+   background-color: #4a3db8;
+}
+
+.why-choose .icon.purple {
+   background-color: var(--secondry-color);
+}
+
+
+.why-choose .icon.orange {
+   background-color: #ffa22b;
+}
+
+.why-choose .icon.orange {
+   background-color: #ffa22b;
+}
+
+.why-choose .icon.red {
+   background-color: #ff382b;
+}
+
+.why-choose .icon.sky {
+   background-color: #0dabb7;
+}
+
+
+.our-team-content .card{
+   border: none;
+}
+
+.our-team-content .image-icon img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 3px solid rgb(255, 253, 253);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/***************Contact Us************************/
+.contact-info .icon{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.contact-info h4{
+   color: #fff;
+   font-weight: normal;
+   margin-bottom: 0;
+
+}
+
+
+.contact-info span {
+   color: #aeb4e9;
+}
+
+
+.contact-info .card.purple{
+   background-color: var(--secondry-color);
+}
+
+
+
+.contact-info .card.blue {
+   background-color: #4a3db8;
 }
